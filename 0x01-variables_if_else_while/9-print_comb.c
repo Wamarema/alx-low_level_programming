@@ -7,23 +7,19 @@
  */
 int main(void)
 {
-    int i, j;
+  int n;
 
-    for (i = 0; i < 10; i++)
+  for (n = 48; n <= 57; n++)
+  {
+    putchar(n);
+    if (n != 57)
     {
-        for (j = i; j < 10; j++)
-        {
-            putchar(i + '0');
-            putchar(j + '0');
-
-            if (i == 8 && j == 9)
-                continue;
-
-            putchar(',');
-            putchar(' ');
-        }
+      putchar(',');
+      putchar(' ');
     }
+  }
 
-    putchar('\n');
-    return (0);
+  putchar('\n');
+
+  return (0);
 }
