@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _abs - Computes the absolute value of an integer
@@ -9,10 +10,10 @@
  */
 int _abs(int n)
 {
+    int abs_n = n < 0 ? -n : n;
+
     if (n < 0)
         putchar('-');
-
-    int abs_n = n < 0 ? -n : n;
 
     if (abs_n / 10)
         _abs(abs_n / 10);
